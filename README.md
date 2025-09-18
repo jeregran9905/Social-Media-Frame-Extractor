@@ -46,12 +46,12 @@ This will save cookies to `facebook_cookies.json`.
 
 ## Downloading Content
 - Parameters:
-  - `<CONTENT_ID>` – Reel/Video ID from Facebook || `<CONTENT_URL>` from Instagram.
+  - `<CONTENT_ID>` – Reel/Video ID from Facebook OR `<CONTENT_URL>` from Instagram.
   - `<FPS_NUMBER>` – Frames per second (default 10).
 
 Run:
 ```bash
-node downloadSocialMedia.js <CONTENT_ID> [FPS_NUMBER]
+node downloadSocialMedia.js <CONTENT_ID>/<CONTENT_URL> [FPS_NUMBER]
 ```
 
 Examples:
@@ -73,7 +73,7 @@ Examples:
   node downloadSocialMedia.js https://www.instagram.com/reel/123456789 20
   ```
 
-- If no parameters are supplied, the script will prompt for the content ID and FPS.
+- If no parameters are supplied, the script will prompt for the content ID/URL and FPS.
 
 - Downloaded videos are saved as `facebook_<id>.mp4` or `instagram_<id>.mp4`.
 - Extracted frames are saved as `frame_0001.png`, `frame_0002.png`, etc. in the `./frames` folder.
