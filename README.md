@@ -37,7 +37,7 @@ npm install
 - Login using the following command (this sets up your cookies file):
 
 ```bash
-node manualLogin.js facebook
+node manualLogin.js
 ```
 
 This will save cookies to `facebook_cookies.json`.
